@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="player">
+        <aside class="sidebar">
+            <h1>♫ Spotify</h1>
+            <p>Home</p>
+            <p>Your Library</p>
+            <div class="playlist-link">My Playlist</div>
+        </aside>
+
+        <section class="content">
+            <header>
+                <p>Good music, your way.</p>
+                <label class="upload-button" for="song-files">＋ Add songs</label>
+                <input id="song-files" type="file" accept="audio/*" multiple>
+            </header>
+
+            <section class="playlist">
+                <p class="eyebrow">REMA · ALBUM</p>
+                <h2>Rave &amp; Roses Ultra</h2>
+                <p class="description">Find and play the original album on Spotify. Spotify may ask you to sign in.</p>
+                <p>
+                    <a class="album-link" href="https://open.spotify.com/search/Rema%20Rave%20%26%20Roses%20Ultra"
+                        target="_blank" rel="noopener noreferrer">Find Rave &amp; Roses Ultra on Spotify</a>
+                </p>
+            </section>
+
+            <section class="playlist local-playlist">
+                <p class="eyebrow">YOUR MUSIC</p>
+                <h2>My Playlist</h2>
+                <p class="description">Songs you add from your device will appear here.</p>
+                <div class="song-heading">
+                    <span>#</span>
+                    <span>Title</span>
+                    <span>Play</span>
+                </div>
+                <ul id="song-list">
+                    <li class="empty-message">Your songs will appear here.</li>
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <footer class="now-playing">
+        <p id="now-playing">Choose a song to play</p>
+        <audio id="audio-player" controls></audio>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
